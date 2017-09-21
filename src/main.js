@@ -3,8 +3,19 @@
 // This is done with the browser options. For the config, see package.json
 import Vue from 'vue'
 import App from './App.vue'
+import VueRouter from 'vue-router'
+import hello from './components/Hello.vue'
 
-new Vue({ // eslint-disable-line no-new
-  el: '#app',
-  render: (h) => h(App)
-})
+Vue.use(VueRouter);
+const router = new VueRouter({
+    routes:[{
+        path: '/hello',
+        name: 'hello',
+        component: hello
+    }]
+});
+/* eslint-disable no-new */
+new Vue({
+    render:h=>h(App),
+    router
+}).$mount('#app');
