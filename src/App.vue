@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <ul id="dropdown1" class="dropdown-content">
-      <li><a>Pets</a></li>
+      <li> <a>Pets</a> </li>
       <li><a>Friends</a></li>
     </ul>
     <nav class='blue'>
