@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a>Pets</a></li>
+      <li><a>Friends</a></li>
+    </ul>
     <nav class='blue'>
       <div class="row">
         <div class="col s1 m1 l1">
@@ -14,11 +18,17 @@
             <li><a>JavaScript</a></li>
           </ul>
         </div>
-        <div class="input-field col s4 offset-s4">
+        <div class="input-field col s5 offset-s3">
+          <div class="col s2 m2 l2">
+            <ul id="nav-mobile" >
+              <li><a class="dropdown-button"  data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+          </div>
+          <div class="col s1 m1 l1"></div>
           <div class="col s1 m1 l1 ">
             <i class="material-icons">search</i>
           </div>
-          <div class="col s11 m11 l11 ">
+          <div class="col s8 m8 l8 ">
             <input id="search" type="search" required>
           </div>
         </div> 
