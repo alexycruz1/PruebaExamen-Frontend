@@ -1,6 +1,6 @@
 <template>
   <div id="hello">
-    <img src="http://vuejs.org/images/logo.png">
+    <img src="https://vuejs.org/images/logo.png">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -25,6 +25,9 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  mehtods: {
+
   }
 }
 </script>
